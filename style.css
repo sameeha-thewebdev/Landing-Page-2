@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gabarito", cursive;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+#nav {
+  display: flex;
+  width: 100%;
+  padding: 20px 30px;
+  justify-content: space-between;
+}
+
+.navleft i {
+  font-size: 20px;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+}
+
+.navright a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+#textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  font-size: 70px;
+}
+
+#textcenter p {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  line-height: 25px;
+}
+
+#textcenter a {
+  color: #000;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  opacity: 0.6;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+}
+
+.rtop {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.rbtm {
+  height: 50%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1695579839395-4ca1012b0d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.rtopleft {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1695669882447-1de80022ff21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.rtopright {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1695456527397-0b9e1c79fe96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  #main{
+    flex-direction: column;
+  }
+  #left{
+    width: 100%;
+  }
+  #nav{
+    margin: 7px 0;
+  }
+  #textcenter p{
+    margin-top: 5px;
+  }
+  #right{
+    width: 100%;
+  }
+}
